@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hdngr/treehouse-express-basics/issues"
   },
-  "homepage": "https://github.com/hdngr/treehouse-express-basics#readme"
+  "homepage": "https://github.com/hdngr/treehouse-express-basics#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
