@@ -1,6 +1,7 @@
 'use strict';
 
-let express = require('express');
+let express = require('express'),
+    posts = ('./mock/posts.json');
 
 let app = express();
 
@@ -15,7 +16,7 @@ let app = express();
  })
 
  app.get('/blog', function(req, res){
-
+    res.send(posts);
  });
 // Taking a callback function as a parameter
 app.listen(3000, function(){
