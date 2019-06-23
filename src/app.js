@@ -10,7 +10,7 @@ let app = express();
   * Create the get method on the app variable
   */
  // The slash parameter is sometimes called the location parameter
- app.get('/', function(request, response){
+ app.get('/', function(req, res){
      response.send("I love Treehouse!");
  })
 
