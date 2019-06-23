@@ -14,6 +14,9 @@ let app = express();
      res.send("<h1>I love Treehouse!</h1>");
  })
 
+ app.get('/blog', function(req, res){
+
+ });
 // Taking a callback function as a parameter
 app.listen(3000, function(){
     console.log("FrontEnd server is running on port 3000");
