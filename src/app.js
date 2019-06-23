@@ -11,8 +11,10 @@ let app = express();
   */
  // The slash parameter is sometimes called the location parameter
  app.get('/', function(req, res){
-     response.send("I love Treehouse!");
+     res.send("<h1>I love Treehouse!</h1>");
  })
 
-
-app.listen(3000);
+// Taking a callback function as a parameter
+app.listen(3000, function(){
+    console.log("FrontEnd server is running on port 3000");
+});
