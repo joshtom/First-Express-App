@@ -5,6 +5,8 @@ let express = require('express'),
 
 let app = express();
 
+app.set('view engine', 'jade');
+app.set('views', __dirname + '/templates');
  /**
   * Setting up the development server using the listen method
   * 
@@ -14,7 +16,7 @@ let app = express();
   */
  // The slash parameter is sometimes called the location parameter
  app.get('/', function(req, res){
-     res.send("<h1>I love Myself and I, I hope this will work now!</h1>");
+     res.render('index');
  })
 
  app.get('/blog/:title?', function(req, res){
