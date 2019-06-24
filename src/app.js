@@ -17,11 +17,16 @@ let app = express();
      res.send("<h1>I love Myself and I, I hope this will work now!</h1>");
  })
 
- app.get('/blog/:title', function(req, res){
+ app.get('/blog/:title?', function(req, res){
      debugger;
      let title = req.params.title;
+     // Checking if no parameter is added
+     if(title === undefined){
+         res.send("This page is under construction please try again");
+     } else {
      let post = posts[title];
     res.send(post);
+            }
  });
 // Taking a callback function as a parameter
 app.listen(5000, function(){
