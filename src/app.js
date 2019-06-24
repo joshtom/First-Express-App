@@ -1,7 +1,7 @@
 'use strict';
 
 let express = require('express'),
-    posts = ('./mock/posts.json');
+      posts = require('./mock/post.json');
 
 let app = express();
 
@@ -12,7 +12,7 @@ let app = express();
   */
  // The slash parameter is sometimes called the location parameter
  app.get('/', function(req, res){
-     res.send("<h1>I love Treehouse!</h1>");
+     res.send("<h1>I almost thought i did not love Treehouse!</h1>");
  })
 
  app.get('/blog', function(req, res){
