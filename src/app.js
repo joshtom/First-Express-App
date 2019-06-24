@@ -18,7 +18,6 @@ let app = express();
  })
 
  app.get('/blog/:title?', function(req, res){
-     debugger;
      let title = req.params.title;
      // Checking if no parameter is added
      if(title === undefined){
