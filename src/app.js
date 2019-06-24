@@ -21,6 +21,7 @@ let app = express();
      let title = req.params.title;
      // Checking if no parameter is added
      if(title === undefined){
+         res.status(503);
          res.send("This page is under construction please try again");
      } else {
      let post = posts[title];
